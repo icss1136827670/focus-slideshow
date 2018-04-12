@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,li {
+	list-style-type: none;
+}
+
+/*轮播容器*/
+#container {
+	width: 600px;
+	height: 400px;
+	position: relative;
+	border: 5px solid #789;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+/*图片列表*/
+#list {
+	width: 4200px;
+	height: 400px;
+	position: absolute;
+}
+
+#list img {
+	float: left;
+}
+
+/*切换按钮*/
+#buttons {
+	width: 100px;
+	height: 12px;
+	position: absolute;
+	bottom: 20px;
+	left: 250px;
+}
+
+#buttons span {
+	width: 10px;
+	height: 10px;
+	background: #333;
+	border-radius: 50%;
+	float: left;
+	border: 1px solid #fff;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+/*高亮按钮*/
+#buttons span.on {
+	background: orange;
+}
+
+/*左右箭头*/
+.arrow {
+	width: 40px;
+	height: 40px;
+	background: rgba(0,0,0,0.3);
+	color: #FFFFFF;
+	font-size: 36px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: 180px;
+	display: none;
+}
+
+#prev {
+	left:20px
+}
+
+#next {
+	right: 20px;
+}
+
+#container:hover .arrow {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
